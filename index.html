@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Awax</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
         rel="stylesheet" />
@@ -18,7 +19,8 @@
                 <div class="logoimg"></div>
             </div>
             <div class="menu">
-                <nav>
+                <img class="menu--opener" id="menu--opener" onclick="MenuOpener()" src="assets/images/menu.png" alt="menu">
+                <nav id="menu--action">
                     <ul>
                         <li class="active"><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
@@ -37,7 +39,7 @@
     <main>
         <section class="banner">
             <div class="sliders" id="sliders">
-                <div class="slide fade">
+                <div class="slide fade slide--banner">
                     <div class="slidearea">
                         <h1>
                             Design is about <br /><span>Communication</span>
@@ -46,7 +48,7 @@
                         <a href="" class="button">Get in touch!</a>
                     </div>
                 </div>
-                <div class="slide fade">
+                <div class="slide fade slide--banner">
                     <div class="slidearea">
                         <h1>
                             Design is about <br /><span>Test</span>
@@ -55,7 +57,7 @@
                         <a href="" class="button">Get in touch!</a>
                     </div>
                 </div>
-                <div class="slide fade">
+                <div class="slide fade slide--banner">
                     <div class="slidearea">
                         <h1>
                             Design is about <br /><span>Lorem</span>
@@ -66,9 +68,9 @@
                 </div>
             </div>
             <div class="sliders--pointers">
-                <div onclick="currentSlide(1)" class="pointer"></div>
-                <div onclick="currentSlide(2)" class="pointer"></div>
-                <div onclick="currentSlide(3)" class="pointer"></div>
+                <div onclick="currentSlide(1)" class="pointer pointer--banner"></div>
+                <div onclick="currentSlide(2)" class="pointer pointer--banner"></div>
+                <div onclick="currentSlide(3)" class="pointer pointer--banner"></div>
             </div>
         </section>
 
