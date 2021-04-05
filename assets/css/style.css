@@ -862,6 +862,10 @@ footer {
   resize: none;
 }
 
+.contact--area form textarea::placeholder {
+  padding-top: 70px;
+}
+
 .contact--area--split {
   display: flex;
 }
@@ -1172,10 +1176,6 @@ footer {
 
   .contact--area form .button {
     margin-top: 30px;
-  }
-
-  .contact--area form textarea::placeholder {
-    padding-top: 70px;
   }
 
   .section--map {
