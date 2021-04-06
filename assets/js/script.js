@@ -21,9 +21,9 @@ function showSlides() {
 
 function MenuOpener() {
     let button = document.getElementById('menu--action')
-    if (button.style.display == 'none') {
-        button.style.display = 'block'
-    } else {
+    if (button.style.display == 'block') {
         button.style.display = 'none'
+    } else {
+        button.style.display = 'block'
     }
 }
